@@ -5,8 +5,8 @@ import "../scss/Landing.scss";
 function Landing(){
     return(
         <>
-            <h1>Hello</h1>
             <canvas id="canvas"></canvas>
+            <h1>Hello</h1>
         </>
     )
 }
