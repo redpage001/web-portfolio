@@ -19,9 +19,7 @@ Particle.prototype.draw = function(){
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
     ctx.fillStyle = this.color;
-    // ctx.shadowOffsetX = 0;
-    // ctx.shadowOffsetY = 0;
-    ctx.shadowColor = "#87CEEB"
+    ctx.shadowColor = "#50EBEC"
     ctx.shadowBlur = 15;
     ctx.fill();
 }
@@ -41,12 +39,12 @@ Particle.prototype.update = function(){
 function init(){
     particleArray = [];
     for (let i = 0; i < 100; i++){
-        let size = Math.random() * 25;
+        let size = Math.random() * 30;
         let x = Math.random() * (innerWidth - size * 2);
         let y = Math.random() * (innerHeight - size * 2);
         let directionX = (Math.random() * .4) - .2;
         let directionY = (Math.random() * .4) - .2;
-        let color = "#87CEEB";
+        let color = "#50EBEC";
 
         particleArray.push(new Particle(x, y, directionX, directionY, size, color));
     }

@@ -4,5 +4,52 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(#171833, #000000);
+    background: radial-gradient(#040725, #000000);
+}
+
+#landingContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#landingContent h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: -1px -1px 2.5px #ffffff, 1px -1px 2.5px #ffffff, -1px 1px 2.5px #ffffff, 1px 1px 2.5px #ffffff;
+    color: #ffffff;
+    margin: 0px;
+}
+
+#landingContent h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: -1px -1px 2.5px #ffffff, 1px -1px 2.5px #ffffff, -1px 1px 2.5px #ffffff, 1px 1px 2.5px #ffffff;
+    color: #ffffff;
+    margin: 0px;
+}
+
+#landingContent button {
+    margin-top: 30px;
+    width: 150px;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.5rem;
+    border: none;
+    color: #151B54;
+    background-color: #4863A0;
+}
+
+#landingContent button:hover {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #50EBEC;
+    box-shadow: -1px -1px 4px #50EBEC, 1px -1px 4px #50EBEC, -1px 1px 4px #50EBEC, 1px 1px 4px #50EBEC;
 }
