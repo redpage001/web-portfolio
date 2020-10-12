@@ -1,0 +1,65 @@
+#portfolioContainer p {
+    font-family: 'Basic', sans-serif;
+    color: #ffffff;
+    text-shadow: -1px -1px .25px #000000, 1px -1px .25px #000000, -1px 1px .25px #000000, 1px 1px .25px #000000;
+    font-size: 1rem;
+}
+
+#portfolioContainer h1, #portfolioContainer h2 {
+    font-family: 'Concert One', cursive;
+    color: #ffffff;
+    text-shadow: -1px -1px .25px #000000, 1px -1px .25px #000000, -1px 1px .25px #000000, 1px 1px .25px #000000;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#040725, #000000);
+}
+
+#portfolioContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    margin-top: 2.5%;
+    background: rgba(80, 235, 236, 0.25);
+    border-top: solid rgba(255, 255, 255, .75) 2px;
+    border-bottom: solid rgba(255, 255, 255, .75) 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+#portfolioContent {
+    border: solid 2px red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 70%;
+    overflow: auto;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.image {
+    border: solid 2px red;
+    width: 450px;
+    height: 350px;
+}
+
+.project p {
+    margin-top: 0;
+}
