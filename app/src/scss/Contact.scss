@@ -1,3 +1,16 @@
+#contactContainer p {
+    font-family: 'Basic', sans-serif;
+    color: #ffffff;
+    text-shadow: -1px -1px .25px #000000, 1px -1px .25px #000000, -1px 1px .25px #000000, 1px 1px .25px #000000;
+    font-size: 1rem;
+}
+
+#contactContainer h1, #contactContainer h2 {
+    font-family: 'Concert One', cursive;
+    color: #ffffff;
+    text-shadow: -1px -1px .25px #000000, 1px -1px .25px #000000, -1px 1px .25px #000000, 1px 1px .25px #000000;
+}
+
 #canvas {
     position: absolute;
     top: 0;
@@ -5,4 +18,18 @@
     width: 100%;
     height: 100%;
     background: radial-gradient(#040725, #000000);
+}
+
+#contactContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    margin-top: 2.5%;
+    background: rgba(80, 235, 236, 0.25);
+    border-top: solid rgba(255, 255, 255, .75) 2px;
+    border-bottom: solid rgba(255, 255, 255, .75) 2px;
+    display: flex;
+    z-index: 1;
 }

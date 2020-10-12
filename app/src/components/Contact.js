@@ -1,10 +1,12 @@
 import React from "react";
 
+import "../scss/Contact.scss"
+
 function Contact(){
     return(
         <>
             <canvas id="canvas"></canvas>
-            <div id="contactContent">
+            <div id="contactContainer">
 
             </div>
         </>
