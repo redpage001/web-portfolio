@@ -37,11 +37,12 @@
 }
 
 #portfolioContent {
-    border: solid 2px red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border-top: solid rgba(255, 255, 255, .05) 2px;
+    border-bottom: solid rgba(255, 255, 255, .05) 2px;
     width: 95%;
     height: 70%;
     overflow: auto;
@@ -54,12 +55,20 @@
     margin-top: 15px;
 }
 
-.image {
-    border: solid 2px red;
+.imageContainer {
     width: 450px;
     height: 350px;
+    border-radius: 15px;
+    box-shadow: -1px -1px 5px #ffffff, 1px -1px 5px #ffffff, -1px 1px 5px #ffffff, 1px 1px 5px #ffffff;
+}
+
+.image {
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
 }
 
 .project p {
-    margin-top: 0;
+    margin-top: 5px;
+    font-size: 1.25rem !important;
 }
