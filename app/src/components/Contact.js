@@ -1,5 +1,7 @@
 import React from "react";
 import { 
+    LeftCircleFilled,
+    RightCircleFilled,
     GithubFilled,
     LinkedinFilled,
     GoogleCircleFilled,
@@ -11,9 +13,21 @@ import "../scss/Contact.scss";
 function Contact(){
     return(
         <>
-            <canvas id="canvas"></canvas>
+            {/* <canvas id="canvas"></canvas> */}
             <div id="contactContainer">
-                <h1>Contact Info</h1>
+
+                <div className="NavBar">
+                    <LeftCircleFilled 
+                        onClick={()=>{console.log("Scroll");window.scrollTo(5000, 0)}}
+                    />
+                    <div id="header">
+                        <h1>Contact</h1>
+                    </div>
+                    <RightCircleFilled 
+                        href="#PortfolioPage"
+                    />
+                </div>
+
                 <div id="ContentContaier">
 
                     <div id="Contact">
@@ -63,6 +77,7 @@ function Contact(){
                     </div>
 
                 </div>
+
             </div>
         </>
     )

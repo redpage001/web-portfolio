@@ -1,4 +1,8 @@
 import React from "react";
+import {
+    LeftCircleFilled,
+    RightCircleFilled,
+} from "@ant-design/icons";
 
 import SaverLife from './../images/SaverLife.png'
 import SpotifyMusicSelector from './../images/SpotifyMusicSelector.png'
@@ -11,9 +15,20 @@ import "../scss/Portfolio.scss";
 function Portfolio(){
     return(
         <>
-            <canvas id="canvas"></canvas>
             <div id="portfolioContainer">
-                <h1>Portfolio</h1>
+
+                <div className="NavBar">
+                    <LeftCircleFilled 
+                        href="#LandingPage"
+                    />
+                    <div id="header">
+                        <h1>Portfolio</h1>
+                    </div>
+                    <RightCircleFilled 
+                        href="#PortfolioPage"
+                    />
+                </div>
+
                 <div id="portfolioContent">
                     <div className="project">
                         <div className="imageContainer">
@@ -76,6 +91,7 @@ function Portfolio(){
                         <p>YuGiOh Card Generator</p>
                     </div>
                 </div>
+                
             </div>
         </>
     )
