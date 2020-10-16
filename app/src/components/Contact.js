@@ -10,6 +10,11 @@ import {
 } from '@ant-design/icons';
 import "../scss/Contact.scss";
 
+function scrollLeft(){
+    window.scrollBy(500, 0)
+    console.log("Scroll")
+}
+
 function Contact(){
     return(
         <>
@@ -18,13 +23,14 @@ function Contact(){
 
                 <div className="NavBar">
                     <LeftCircleFilled 
-                        onClick={()=>{console.log("Scroll");window.scrollTo(5000, 0)}}
+                        onClick={scrollLeft}
+                        style={{ fontSize: '25px', color: '#ffffff' }}
                     />
                     <div id="header">
                         <h1>Contact</h1>
                     </div>
                     <RightCircleFilled 
-                        href="#PortfolioPage"
+                        style={{ color: 'rgba(255, 255, 255, 0)'}}
                     />
                 </div>
 

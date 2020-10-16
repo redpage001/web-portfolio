@@ -19,13 +19,13 @@ function Portfolio(){
 
                 <div className="NavBar">
                     <LeftCircleFilled 
-                        href="#LandingPage"
+                        style={{ fontSize: '25px', color: '#ffffff' }}
                     />
                     <div id="header">
                         <h1>Portfolio</h1>
                     </div>
                     <RightCircleFilled 
-                        href="#PortfolioPage"
+                        style={{ fontSize: '25px', color: '#ffffff' }}
                     />
                 </div>
 
